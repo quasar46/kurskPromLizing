@@ -1,0 +1,20 @@
+.breadcrumbs {
+    margin-bottom: 50px;
+
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.breadcrumbs__list {
+    display: flex;
+
+    li {
+        margin-right: 10px;
+
+        a {
+            font-size: 21px;
+            font-weight: 300;
+        }
+    }
+}

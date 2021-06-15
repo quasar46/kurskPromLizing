@@ -1,0 +1,69 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+        .hero-inner(style='background-image:url("img/hero-inner/object-lease-banner-background.jpg")')
+            .container.container--mode
+                h2.title-main Предмет лизинга
+
+        .breadcrumbs
+            .container.container--mode
+                ul.breadcrumbs__list 
+                    li
+                        a(href="index.html") Главная
+                    li
+                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.666781 9.42146L5.94959 5.29529C5.99448 5.26038 6.0308 5.21569 6.05578 5.16461C6.08076 5.11353 6.09375 5.05742 6.09375 5.00056C6.09375 4.9437 6.08076 4.88759 6.05578 4.83652C6.0308 4.78544 5.99448 4.74074 5.94959 4.70584L0.666781 0.579665" stroke="#22304B" stroke-width="0.5"/></svg>
+                    li
+                        a.current Предмет лизинга
+
+        .catalog.inner-block
+            .container.container--mode 
+                .catalog__wrapper 
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item1.svg" alt="")
+                        span.catalog__name Недвижимость
+                        p.catalog__text Приобретите дорогостоящее оборудование, транспорт, спецтехнику или производственную недвижимость уже сейчас
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item2.svg" alt="")
+                        span.catalog__name Медтехника
+                        p.catalog__text Сторонники тоталитаризма в науке преданы социально-демократической анафеме. Сложно сказать, почему представители современных социальных.
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item3.svg" alt="")
+                        span.catalog__name Транспорт
+                        p.catalog__text А ещё диаграммы связей набирают популярность среди определённых слоёв населения, а значит, должны быть объективно рассмотрены
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item4.svg" alt="")
+                        span.catalog__name Оборудование
+                        p.catalog__text А ещё диаграммы связей набирают популярность среди определённых слоёв населения, а значит, должны быть объективно рассмотрены
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item5.svg" alt="")
+                        span.catalog__name Спецтехника
+                        p.catalog__text С другой стороны, внедрение современных методик однозначно определяет каждого участника как способного принимать собственные решения касаемо
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item1.svg" alt="")
+                        span.catalog__name Недвижимость
+                        p.catalog__text Приобретите дорогостоящее оборудование, транспорт, спецтехнику или производственную недвижимость уже сейчас
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item1.svg" alt="")
+                        span.catalog__name Недвижимость
+                        p.catalog__text Приобретите дорогостоящее оборудование, транспорт, спецтехнику или производственную недвижимость уже сейчас
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item1.svg" alt="")
+                        span.catalog__name Недвижимость
+                        p.catalog__text Приобретите дорогостоящее оборудование, транспорт, спецтехнику или производственную недвижимость уже сейчас
+                    .catalog__item 
+                        img.catalog__picture(src="img/svg/catalog/item1.svg" alt="")
+                        span.catalog__name Недвижимость
+                        p.catalog__text Приобретите дорогостоящее оборудование, транспорт, спецтехнику или производственную недвижимость уже сейчас
+
+        .order-other.inner-block
+            .container.container--mode 
+                .order-other__wrapper 
+                    h2.title Оставьте заявку
+                    p.order-other__subtitle Господа, современная методология разработки требует определения и уточнения поставленных обществом
+                    button.button.button--green ОСТАВИТЬ ЗАЯВКУ
+
+        include modules/menu.pug
+        include modules/footer.pug
+        include modules/script.pug

@@ -1,0 +1,129 @@
+.partners {
+    @include media-tablet {
+        display: none;
+    }
+}
+
+.partners__item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.5;
+        text-align: center;
+    }
+}
+
+.partners__slick {
+    margin-bottom: 60px;
+
+    .slick-arrow {
+        position: absolute;
+        width: 18px;
+        height: 30px;
+        background-size: cover;
+        border: 0;
+        background-color: transparent;
+        font-size: 0;
+        top: 20%;
+        z-index: 100;
+    }
+
+    .slick-prev {
+        left: 0;
+        background-image: url("../img/svg/slick-prev.svg");
+    }
+
+    .slick-next {
+        right: 0;
+        background-image: url("../img/svg/slick-next.svg");
+    }
+
+    @include media-laptop {
+        .slick-list {
+            margin: 0 70px;
+        }
+    }
+}
+
+.partners__button {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-laptop {
+        display: none;
+    }
+}
+
+.partners__list--mode {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -40px;
+
+    @include media-laptop {
+        margin: 0 -50px;
+    }
+
+    @include media-tablet {
+        margin: 0 -45px;
+    }
+
+    @include media-mobile {
+        margin: 0 -15px;
+    }
+}
+
+.partners__slick-item--mode {
+    width: calc(100% / 7);
+    margin-bottom: 80px;
+    padding: 0 40px;
+
+    img {
+        height: 107px;
+        object-fit: contain;
+
+        @include media-mobile {
+            height: 77px;
+            margin-bottom: 10px;
+        }
+    }
+
+    p {
+        font-size: 16px;
+        font-weight: 300;
+
+        @include media-mobile {
+            font-size: 10px;
+        }
+
+        @include media-mobile2 {
+            font-size: 8px;
+        }
+    }
+
+    @include media-laptop {
+        width: calc(100% / 5);
+        padding: 0 50px;
+    }
+
+    @include media-tablet {
+        width: calc(100% / 4);
+        margin-bottom: 65px;
+        padding: 0 45px;
+    }
+
+    @include media-mobile {
+        padding: 0 15px;
+        margin-bottom: 20px;
+    }
+
+}

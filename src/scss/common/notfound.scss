@@ -1,0 +1,58 @@
+.notfound {
+    padding-top: 90px;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    background-image: url("../img/svg/big-tringle.svg");
+    background-position: right bottom;
+    background-size: 696px auto;
+    background-repeat: no-repeat;
+
+    img {
+        margin-right: 60px;
+
+        @include media-laptop {
+            margin-left: 0;
+            margin-right: 0;
+            width: auto;
+        }
+
+        @include media-tablet {
+            position: absolute;
+            top: 90px;
+            left: 0;
+        }
+    }
+
+    @include media-laptop {
+        background-image: none;
+    }
+
+    @include media-tablet {
+        justify-content: center;
+    }
+}
+
+.notfount__content {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 200px;
+        font-weight: 600;
+    }
+
+    span {
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 55px;
+    }
+
+    .button {
+        align-self: flex-start;
+    }
+
+    @include media-tablet {
+        text-align: center;
+    }
+}

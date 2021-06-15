@@ -1,0 +1,19 @@
+.hero-inner {
+    position: relative;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    margin-bottom: 30px;
+
+    @include media-tablet {
+        height: 200px;
+        margin-bottom: 40px;
+    }
+
+    @include media-mobile {
+        background-image: none !important;
+        height: auto;
+        // margin-bottom: 20px;
+    }
+}

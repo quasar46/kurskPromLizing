@@ -1,0 +1,20 @@
+.order-other {
+    background-image: url("../img/bg/object-lease-cta-bckgrnd-1920.jpg");
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 140px;
+    @include media-tablet {
+        padding: 0 10px;
+    }
+}
+
+.order-other__wrapper {
+    max-width: 470px;
+}
+
+.order-other__subtitle {
+    margin-bottom: 25px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.4;
+}

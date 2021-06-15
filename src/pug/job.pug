@@ -1,0 +1,72 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+        .hero-inner(style='background-image:url("img/hero-inner/job-banner-background-1920.jpg")')
+            .container.container--mode
+                h2.title-main Условия работы
+
+        .breadcrumbs
+            .container.container--mode
+                ul.breadcrumbs__list 
+                    li
+                        a(href="index.html") Главная
+                    li
+                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.666781 9.42146L5.94959 5.29529C5.99448 5.26038 6.0308 5.21569 6.05578 5.16461C6.08076 5.11353 6.09375 5.05742 6.09375 5.00056C6.09375 4.9437 6.08076 4.88759 6.05578 4.83652C6.0308 4.78544 5.99448 4.74074 5.94959 4.70584L0.666781 0.579665" stroke="#22304B" stroke-width="0.5"/></svg>
+                    li
+                        a.current Условия работы
+
+        .job-list.inner-block
+            .container.container--mode
+                ul.job-list__wrapper
+                    li.job-list__item
+                        h3.job-list__title Подзаголовок
+                        p.job-list__text Ясность нашей позиции очевидна: повышение уровня гражданского сознания позволяет выполнить важные задания по разработке позиций, занимаемых участниками в отношении поставленных
+                        span.job-list__number 01
+                    li.job-list__item
+                        h3.job-list__title Подзаголовок
+                        p.job-list__text Повседневная практика показывает, что высококачественный прототип будущего проекта предполагает независимые способы реализации системы массового участия! Таким образом, внедрение.
+                        span.job-list__number 02
+                    li.job-list__item
+                        h3.job-list__title Подзаголовок
+                        p.job-list__text Как уже неоднократно упомянуто, тщательные исследования конкурентов, вне зависимости от их уровня, должны быть превращены в посмешище, хотя само их существование приносит
+                        span.job-list__number 03
+                    li.job-list__item
+                        h3.job-list__title Подзаголовок
+                        p.job-list__text С учётом сложившейся международной обстановки, выбранный нами инновационный путь позволяет выполнить важные задания по разработке существующих финансовых и административных
+                        span.job-list__number 04
+                    li.job-list__item
+                        h3.job-list__title Подзаголовок
+                        p.job-list__text Вот вам яркий пример современных тенденций — базовый вектор развития представляет собой интересный эксперимент проверки своевременного выполнения сверхзадачи. Равным образом.
+                        span.job-list__number 05
+                    li.job-list__item
+                        h3.job-list__title Подзаголовок
+                        p.job-list__text Имеется спорная точка зрения, гласящая примерно следующее: стремящиеся вытеснить традиционное производство, нанотехнологии неоднозначны и будут преданы социально-демократической
+                        span.job-list__number 06
+
+        .advantages.inner-block 
+            .container.container--mode
+                h2.title.advantages__title Как происходит оформление
+            .container
+                .advantages__wrapper 
+                    ul.advantages__list 
+                        li 
+                            p Таким образом, граница обучения кадров требует анализа новых принципов формирования
+                            span.advantages__number 01
+                        li 
+                            p Идейные соображения высшего порядка, а также повышение уровня гражданского сознания
+                            span.advantages__number 02
+                        li 
+                            p Приятно, граждане, наблюдать, как элементы политического процесса обнародованы. Учитывая.
+                            span.advantages__number 03
+                        li 
+                            p В целом, конечно, базовый вектор развития требует анализа существующих финансовых и
+                            span.advantages__number 04
+            .advantages__wide-block
+
+        include modules/order.pug
+
+        include modules/menu.pug
+        include modules/footer.pug
+        include modules/script.pug

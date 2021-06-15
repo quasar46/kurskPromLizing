@@ -1,0 +1,102 @@
+.card {
+    background-image: url('../img/image-50.png'), url('../img/svg/big-tringle.svg');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 1080px auto, 801px auto;
+    margin-top: 100px;
+    padding-bottom: 325px;
+
+    @include media-laptop {
+        background-image: url('../img/card-truck-car-1024.png'), none;
+        background-size: 771px auto;
+    }
+
+    @include media-tablet {
+        background-image: url('../img/image-50.png');
+        background-position: 330px 0;
+        padding-bottom: 0;
+    }
+
+    @include media-mobile {
+        margin-top: 0;
+        padding-bottom: 348px;
+        background-position: bottom;
+        background-size: 500px auto;
+    }
+
+    @include media-mobile2 {
+        background-size: 320px auto;
+        padding-bottom: 300px;
+    }
+}
+
+.card__wrapper {
+    display: flex;
+}
+
+.card__aside {
+    max-width: 570px;
+    width: 100%;
+
+    @include media-laptop {
+        max-width: 431px;
+    }
+
+    @include media-tablet {
+        max-width: 354px;
+    }
+}
+
+.cart__title {
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+    @include media-tablet {
+        font-size: 36px;
+    }
+
+    @include media-mobile {
+        font-size: 24px;
+        max-width: 230px;
+    }
+
+    @include media-mobile2 {
+        font-size: 17px;
+    }
+}
+
+.card__item {
+    position: relative;
+    margin-bottom: 20px;
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.4;
+
+        @include media-mobile2 {
+            font-size: 10px;
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        background-color: $color-green-dark;
+        border-radius: 50%;
+        left: -32px;
+        top: 0px;
+
+        @include media-tablet {
+            display: none;
+        }
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

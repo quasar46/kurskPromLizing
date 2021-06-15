@@ -1,0 +1,273 @@
+.proposal {
+    position: relative;
+}
+
+.proposal__item {
+    position: relative;
+    display: flex !important;
+
+    picture {
+        @include media-laptop {
+            margin-top: 100px;
+        }
+
+        @include media-tablet {
+            margin-top: 73px;
+        }
+
+        @include media-mobile2 {
+            margin-top: 25px;
+        }
+    }
+
+    picture {
+        img {
+            max-width: 1145px;
+
+            @include media-laptop {
+                max-width: 458px;
+            }
+
+            @include media-tablet {
+                max-width: 390px;
+            }
+
+            @include media-mobile {
+                max-width: 100%;
+            }
+        }
+    }
+
+    .proposal__picture {
+        width: 1174px;
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        @include media-laptop {
+            width: 470px;
+            padding-top: 120px;
+        }
+    }
+
+    .container {
+        position: static;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+    }
+}
+
+.proposal__title {
+    margin-bottom: 15px;
+
+    @include media-laptop {
+        margin-bottom: 50px;
+    }
+
+    @include media-tablet {
+        margin-bottom: 30px;
+    }
+}
+
+.proposal__count {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+
+    span {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+.proposal__container {
+    margin-top: -60px;
+    display: flex;
+
+    @include media-laptop {
+        margin-top: 0;
+    }
+}
+
+.proposal__button {
+    margin-left: auto;
+    margin-right: 150px;
+
+    @include media-laptop {
+        margin-right: 187px;
+    }
+
+    @include media-tablet {
+        margin-right: 40px;
+        // height: 49px;
+    }
+
+    @include media-mobile {
+        // height: 43px;
+        margin-right: auto;
+    }
+}
+
+.proposal__name {
+    position: relative;
+    font-size: 16px;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: $color-green-dark;
+    }
+
+    &--mode {
+        &::before {
+            width: 36px;
+            height: 36px;
+            left: -5px;
+        }
+    }
+}
+
+.proposal__pagination {
+    left: 50px;
+}
+
+.proposal__slick {
+    margin-bottom: 20px;
+    position: relative;
+
+    @include media-laptop {
+        margin-bottom: 0;
+    }
+
+    @include media-mobile {
+        margin-bottom: 25px;
+    }
+}
+
+.proposal__item-title {
+    position: relative;
+    top: 95px;
+    left: 1092px;
+    font-size: 36px;
+    font-weight: 300;
+
+    // padding-left: 49px;
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 400px;
+        height: 400px;
+        background-image: url("../img/proposal/romb.svg");
+        background-size: cover;
+        left: -315px;
+        top: 134px;
+        z-index: -1;
+
+        @include media-laptop {
+            display: none;
+        }
+    }
+
+    @include media-laptop {
+        &::before {
+            display: none !important;
+        }
+    }
+}
+
+.proposal__list {
+
+    li {
+        position: absolute;
+
+        p {
+            padding-left: 49px;
+        }
+
+        &:nth-child(2) {
+            top: 238px;
+            left: 1129px;
+
+            @include media-laptop {
+                left: 0;
+                top: 0;
+                margin-top: 38px;
+            }
+        }
+
+        &:nth-child(3) {
+            top: 339px;
+            left: 1229px;
+
+            @include media-laptop {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        &:nth-child(4) {
+            top: 462px;
+            left: 1231px;
+
+            @include media-laptop {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        &:last-child {
+            top: 550px;
+            left: 1132px;
+
+            @include media-laptop {
+                left: 0;
+                top: 0;
+            }
+        }
+
+        @include media-laptop {
+            position: relative;
+            left: 0;
+            top: 0;
+            // padding-left: 49px;
+            margin-bottom: 40px;
+            margin-left: 16px;
+        }
+
+        @include media-tablet {
+            font-size: 22px;
+        }
+    }
+
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.proposal__arrows {
+    display: none;
+
+    @include media-mobile {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.proposal__item-name {
+    text-align: center;
+    margin: 0 30px;
+
+    @include media-mobile2 {
+        font-size: 16px;
+    }
+}

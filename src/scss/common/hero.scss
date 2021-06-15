@@ -1,0 +1,116 @@
+.hero__content {
+    background-image: url("../img/main-background-car-1920.png");
+    background-size: 1090px auto;
+    background-repeat: no-repeat;
+    background-position: right 60px;
+    padding-top: 80px;
+    padding-bottom: 390px;
+
+    @include media-laptop {
+        background-image: url("../img/image-9.png");
+        background-size: 800px auto;
+        background-position: 120% top;
+        padding-bottom: 170px;
+    }
+
+    @include media-tablet {
+        background-image: url("../img/image-9-768.png");
+        background-size: 480px auto;
+        padding-top: 50px;
+        background-position: right;
+    }
+
+    @include media-mobile {
+        background-image: url("../img/image-9.png");
+        background-size: 350px auto;
+        padding-bottom: 50px;
+    }
+
+    @include media-mobile2 {
+        background-size: 250px auto;
+        padding-bottom: 35px;
+    }
+}
+
+.slick-dots {
+    flex-direction: column;
+    // top: 225px;
+    top: 50%;
+    transform: translateY(-90%);
+    left: 255px;
+    display: flex;
+    position: absolute;
+    z-index: 100;
+
+    .slick-active {
+        color: $color-blue-dark;
+        border: 2px solid $color-blue-dark;
+        border-radius: 4px;
+    }
+
+    li {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        font-size: 26px;
+        font-weight: 600;
+        width: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+}
+
+.hero__slick {
+    .slick-arrow {
+        display: none;
+    }
+}
+
+.hero__caption {
+    max-width: 770px;
+    width: 100%;
+
+    h1 {
+        font-size: 80px;
+        font-weight: 400;
+        margin-bottom: 35px;
+
+        @include media-laptop {
+            // font-size: 36px;
+            font-size: 80px;
+        }
+
+        .br {
+            @include media-laptop {
+                display: block;
+            }
+        }
+
+        @include media-tablet {
+            font-size: 36px;
+            margin-bottom: 23px;
+        }
+
+        @include media-mobile2 {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        font-size: 24px;
+        margin-bottom: 35px;
+
+        @include media-tablet {
+            font-size: 22px;
+        }
+
+        @include media-mobile2 {
+            font-size: 17px;
+        }
+    }
+}

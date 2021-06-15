@@ -1,0 +1,248 @@
+.footer {
+    background-color: $color-base;
+    color: #fff;
+    padding: 70px 0;
+
+    &--desktop {
+        @include media-laptop {
+            display: none;
+        }
+    }
+
+    &--laptop {
+        display: none;
+
+        @include media-laptop {
+            display: block;
+        }
+    }
+
+    @include media-tablet {
+        padding: 40px 0;
+    }
+
+    @include media-mobile2 {
+        padding: 30px 0;
+    }
+}
+
+.footer__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    p {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    ul {
+        li {
+            margin-bottom: 10px;
+
+            &.footer__title {
+                height: 40px;
+                display: flex;
+                align-items: center;
+                font-size: 22px;
+                font-weight: 400;
+                line-height: 1;
+
+                @include media-laptop {
+                    margin-bottom: 20px;
+                }
+
+                @include media-tablet {
+                    margin-bottom: 23px;
+                }
+            }
+
+            @include media-tablet {
+                margin-bottom: 17px;
+            }
+
+            @include media-mobile {
+                margin-bottom: 10px;
+            }
+
+            &.footer__logo {
+                @include media-mobile {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &:first-child {
+        margin-bottom: 60px;
+
+        @include media-laptop {
+            margin-bottom: -40px;
+        }
+    }
+
+    &:last-child {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        line-height: 1.5;
+
+        p {
+            font-size: 12px;
+            font-weight: 300;
+            line-height: 1.5;
+
+            &:first-child {
+                max-width: 570px;
+                margin-bottom: 10px;
+
+                @include media-laptop {
+                    max-width: 100%;
+                }
+            }
+
+            &:last-child {
+                max-width: 470px;
+
+                @include media-laptop {
+                    max-width: 100%;
+                }
+            }
+
+            @include media-mobile {
+                font-size: 10px;
+            }
+
+            @include media-mobile2 {
+                font-size: 8px;
+            }
+        }
+
+        @include media-laptop {
+            flex-wrap: wrap;
+        }
+    }
+
+    @include media-laptop {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+}
+
+.footer__logo {
+    display: flex;
+    height: 40px;
+
+    img {
+        max-width: 26px;
+        width: 100%;
+        margin-right: 14px;
+
+        @include media-mobile2 {
+            max-width: 18px;
+        }
+    }
+
+    span {
+        font-size: 27px;
+        font-weight: 300;
+        align-self: flex-end;
+
+        @include media-laptop {
+            font-size: 28px;
+        }
+
+        @include media-mobile {
+            font-size: 24px;
+        }
+
+        @include media-mobile2 {
+            font-size: 18px;
+        }
+    }
+
+    @include media-mobile2 {
+        height: 26px;
+    }
+}
+
+
+
+.footer__list {
+    width: calc(100% / 3);
+    width: 350px;
+    justify-content: space-between;
+
+    a {
+        font-size: 18px;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.4);
+
+        @include media-laptop {
+            color: #fff;
+        }
+
+        @include media-mobile2 {
+            font-size: 12px;
+        }
+    }
+
+    &:nth-child(2) {
+        @include media-laptop {
+            margin-left: auto;
+        }
+    }
+
+    &:nth-child(3) {
+        @include media-laptop {
+            width: 215px;
+        }
+    }
+
+    &:last-child {
+        @include media-laptop {
+            width: 610px;
+            margin-left: auto;
+        }
+
+        @include media-tablet {
+            margin-left: 0;
+            font-size: 12px;
+            width: 100%;
+        }
+    }
+
+    @include media-laptop {
+        margin-bottom: 40px;
+    }
+
+    @include media-mobile {
+        margin-bottom: 20px;
+    }
+}
+
+.footer__about {
+    @include media-tablet {
+        margin-top: -180px;
+    }
+
+    @include media-mobile {
+        margin-top: 0;
+    }
+}
+
+.footer__contacts {
+    a {
+        color: #fff;
+    }
+}
+
+.footer__lizing {
+    @include media-mobile {
+        display: none;
+    }
+}
