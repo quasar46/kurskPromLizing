@@ -1,6 +1,9 @@
 .header {
     padding-top: 15px;
     margin-bottom: 25px;
+    @include media-mobile2 {
+        padding-top: 10px;
+    }
 }
 
 .header__wrapper {
@@ -33,7 +36,7 @@
 
 .header__menu {
     padding-bottom: 5px;
-    border-bottom: 1px solid #22304B;
+    border-bottom: 1px solid #22304b;
 
     a {
         font-size: 18px;
@@ -66,7 +69,6 @@
     position: relative;
     z-index: 10;
     cursor: pointer;
-
 
     &::before {
         content: "";
@@ -108,8 +110,6 @@
     }
 
     &.active {
-
-
         span {
             display: none;
         }

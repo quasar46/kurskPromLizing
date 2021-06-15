@@ -1,43 +1,51 @@
+.hero {
+    margin-top: 100px;
+    @include media-laptop {
+        margin-top: 0;
+    }
+}
+
+.hero__wrapper {
+    position: relative;
+    z-index: 10;
+    @include media-laptop {
+        padding-top: 90px;
+    }
+    @include media-tablet {
+        padding-top: 25px;
+    }
+}
+
 .hero__content {
-    background-image: url("../img/main-background-car-1920.png");
-    background-size: 1090px auto;
-    background-repeat: no-repeat;
-    background-position: right 60px;
-    padding-top: 80px;
+    position: relative;
     padding-bottom: 390px;
 
     @include media-laptop {
-        background-image: url("../img/image-9.png");
-        background-size: 800px auto;
-        background-position: 120% top;
         padding-bottom: 170px;
     }
 
     @include media-tablet {
-        background-image: url("../img/image-9-768.png");
-        background-size: 480px auto;
-        padding-top: 50px;
         background-position: right;
     }
 
     @include media-mobile {
-        background-image: url("../img/image-9.png");
-        background-size: 350px auto;
         padding-bottom: 50px;
     }
 
     @include media-mobile2 {
-        background-size: 250px auto;
         padding-bottom: 35px;
     }
 }
 
+.hero__picture {
+    position: absolute;
+    display: block;
+    right: 0;
+    top: 0;
+    width: 1024px;
+}
+
 .slick-dots {
-    flex-direction: column;
-    // top: 225px;
-    top: 50%;
-    transform: translateY(-90%);
-    left: 255px;
     display: flex;
     position: absolute;
     z-index: 100;
@@ -66,6 +74,12 @@
 }
 
 .hero__slick {
+    .slick-dots {
+        flex-direction: column;
+        top: 50%;
+        transform: translateY(-90%);
+        left: 255px;
+    }
     .slick-arrow {
         display: none;
     }
@@ -111,6 +125,7 @@
 
         @include media-mobile2 {
             font-size: 17px;
+            margin-bottom: 15px;
         }
     }
 }
