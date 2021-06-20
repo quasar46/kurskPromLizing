@@ -1,0 +1,35 @@
+.logo {
+    display: flex;
+    flex-direction: column;
+
+    @include media-laptop {
+        max-width: 251px;
+    }
+}
+
+.logo__name {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $color-blue-dark;
+    margin-bottom: 5px;
+
+    @include media-laptop {
+        font-size: 24px;
+    }
+    @include media-mobile2 {
+        font-size: 18px;
+    }
+}
+
+.logo__pictures {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    img {
+        @include media-tablet {
+            transform: scale(0.8);
+        }
+    }
+}

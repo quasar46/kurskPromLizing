@@ -1,0 +1,43 @@
+doctype html
+html(lang="ru")
+    include modules/head
+    body
+        include modules/header.pug
+        .hero-inner(style='background-image:url("img/hero-inner/object-lease-banner-background.jpg")')
+            .container.container--mode
+                h2.title-main Грузовые автомобили
+
+        .breadcrumbs
+            .container.container--mode
+                ul.breadcrumbs__list 
+                    li
+                        a(href="index.html") Главная
+                    li
+                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.666781 9.42146L5.94959 5.29529C5.99448 5.26038 6.0308 5.21569 6.05578 5.16461C6.08076 5.11353 6.09375 5.05742 6.09375 5.00056C6.09375 4.9437 6.08076 4.88759 6.05578 4.83652C6.0308 4.78544 5.99448 4.74074 5.94959 4.70584L0.666781 0.579665" stroke="#22304B" stroke-width="0.5"/></svg>
+                    li
+                        a(href="index.html") Предмет лизинга
+                    li
+                        <svg width="7" height="10" viewBox="0 0 7 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.666781 9.42146L5.94959 5.29529C5.99448 5.26038 6.0308 5.21569 6.05578 5.16461C6.08076 5.11353 6.09375 5.05742 6.09375 5.00056C6.09375 4.9437 6.08076 4.88759 6.05578 4.83652C6.0308 4.78544 5.99448 4.74074 5.94959 4.70584L0.666781 0.579665" stroke="#22304B" stroke-width="0.5"/></svg>
+                    li
+                        a.current Название предмета лизинга
+
+        .card.inner-block 
+            .container.container--mode 
+                .card__wrapper
+                    .card__aside 
+                        h3.cart__title Название предмета лизинга
+                        .card__text 
+                            ul.card__list
+                                li.card__item 
+                                    p Сложно сказать, почему сторонники тоталитаризма в науке освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, указаны как претенденты на роль ключевых факторов. В частности, семантический разбор внешних противодействий прекрасно подходит для реализации благоприятных перспектив. 
+                                li.card__item 
+                                    p Мы вынуждены отталкиваться от того, что повышение уровня гражданского сознания прекрасно подходит для реализации модели развития. А также реплицированные с зарубежных источников, современные исследования, превозмогая сложившуюся непростую экономическую ситуацию, функционально разнесены на независимые элементы. 
+
+
+
+
+        include modules/order.pug
+
+        include modules/menu.pug
+        include modules/footer.pug
+        include modules/script.pug

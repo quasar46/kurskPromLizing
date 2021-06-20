@@ -1,0 +1,11 @@
+.slider__counter {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @include media-mobile {
+        display: flex;
+    }
+}

@@ -1,0 +1,154 @@
+.contacts__wrapper {
+    display: flex;
+}
+
+.contacts__links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+
+    a {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-weight: 300;
+
+        @include media-tablet {
+            font-size: 16px;
+        }
+
+        @include media-mobile2 {
+            font-size: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        svg {
+            margin-right: 15px;
+
+            @include media-mobile {
+                margin-right: 5px;
+            }
+        }
+
+        @include media-mobile {
+            margin-bottom: 0;
+        }
+    }
+
+    @include media-mobile {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    @include media-mobile2 {
+        margin-bottom: 20px;
+    }
+}
+
+.contacts__info {
+    p {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 300;
+
+        @include media-tablet {
+            font-size: 16px;
+        }
+
+        @include media-mobile2 {
+            font-size: 10px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.contacts__col {
+    width: 50%;
+    padding-right: 150px;
+
+    @include media-laptop {
+        padding-right: 30px;
+    }
+
+    @include media-mobile {
+        width: 100%;
+        padding-right: 0;
+    }
+}
+
+.contacts__feedback {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    label {
+        font-size: 16px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+
+        @include media-tablet {
+            font-size: 14px;
+        }
+    }
+
+    input {
+        height: 40px;
+        border: 1px solid rgba(34, 48, 75, 0.2);
+        border-radius: 8px;
+        max-width: 370px;
+        width: 100%;
+        outline: none;
+        padding: 0 20px;
+
+        &:focus {
+            border: 1px solid rgba(34, 48, 75, 1);
+        }
+
+        @include media-tablet {
+            max-width: 100%;
+        }
+    }
+
+    button {
+        align-self: flex-start;
+    }
+
+    @include media-mobile {
+        display: none;
+    }
+}
+
+.contacts__feedback-title {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+    @include media-tablet {
+        font-size: 16px;
+    }
+
+    @include media-mobile2 {
+        font-size: 10px;
+    }
+}
+
+.contacts__geedback-concent {
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(34, 48, 75, 0.8);
+    margin-bottom: 20px;
+
+    @include media-tablet {
+        font-size: 10px;
+    }
+}

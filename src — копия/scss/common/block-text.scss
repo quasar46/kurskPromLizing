@@ -1,0 +1,43 @@
+.block-text__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+
+    p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.4;
+        width: calc(100% / 2 - 65px);
+
+        @include media-laptop {
+            width: calc(100% / 2 - 10px);
+        }
+
+        @include media-mobile {
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        @include media-mobile2 {
+            font-size: 10px;
+        }
+    }
+
+    @include media-laptop {
+        margin-bottom: 70px;
+    }
+
+    @include media-tablet {
+        margin-bottom: 35px;
+    }
+
+    @include media-mobile {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+}

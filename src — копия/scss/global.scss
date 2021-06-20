@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+@import "utils/stylesheet";
+@import "./node_modules/normalize.css/normalize";
+@import "utils/slick";
+@import "utils/variables";
+@import "mixins/media";
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: $fontBase;
+}
+
+body {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 18px;
+    color: $color-base;
+
+    &.overflow {
+        overflow: hidden;
+    }
+}
+
+.container {
+    position: relative;
+    max-width: 1252px;
+    width: 100%;
+    margin: 0 auto;
+
+    @include media-laptop {
+        max-width: 920px;
+    }
+
+    @include media-tablet {
+        padding: 0 20px;
+    }
+
+    @include media-mobile2 {
+        padding: 0 12px;
+    }
+
+    &--mode {
+        padding: 0 20px;
+
+        @include media-mobile {
+            padding: 0 15px;
+        }
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+}

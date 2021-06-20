@@ -1,0 +1,23 @@
+.category {
+    background-image: url("../img/svg/big-tringle.svg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+
+    @include media-laptop {
+        background-position: right top;
+        background-size: 360px auto;
+    }
+
+    @include media-mobile {
+        background-image: none;
+    }
+}
+
+.category__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-laptop {
+        flex-direction: column;
+    }
+}
