@@ -1,6 +1,5 @@
 .hero {
     margin-top: 100px;
-
     @include media-laptop {
         margin-top: 0;
     }
@@ -9,11 +8,9 @@
 .hero__wrapper {
     position: relative;
     z-index: 10;
-
     @include media-laptop {
         padding-top: 90px;
     }
-
     @include media-tablet {
         padding-top: 25px;
     }
@@ -82,12 +79,7 @@
         top: 50%;
         transform: translateY(-90%);
         left: 255px;
-
-        @media (max-width: 1440px) {
-            left: 30px;
-        }
     }
-
     .slick-arrow {
         display: none;
     }

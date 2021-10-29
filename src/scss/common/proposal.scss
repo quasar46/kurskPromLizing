@@ -208,12 +208,20 @@
     margin-bottom: 20px;
     position: relative;
 
+    .slick-dots {
+        left: 366px;
+        bottom: -10px;
+    }
+
     @include media-laptop {
         margin-bottom: 0;
     }
 
     @include media-mobile {
         margin-bottom: 25px;
+    }
+    @include media-mobile2 {
+        margin-bottom: 0;
     }
 }
 
@@ -258,7 +266,6 @@
 }
 
 .proposal__list {
-
     li {
         position: absolute;
 

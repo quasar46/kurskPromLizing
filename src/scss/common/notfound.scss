@@ -32,6 +32,12 @@
         }
     }
 
+    picture {
+        @include media-laptop {
+            margin-left: -450px;
+        }
+    }
+
     @include media-laptop {
         background-image: none;
         padding-top: 40px;
