@@ -15,9 +15,14 @@
             margin-top: 73px;
         }
 
-        @include media-mobile2 {
-            margin-top: 25px;
+        @include media-mobile {
+            display: none;
         }
+
+        // @include media-mobile2 {
+        //     margin-top: 25px;
+        // }
+
     }
 
     picture {
@@ -54,6 +59,14 @@
         position: static;
     }
 
+    @media (max-width: 1440px) {
+        margin-left: -200px;
+    }
+
+    @include media-laptop {
+        margin-left: 0;
+    }
+
     @include media-mobile {
         flex-direction: column;
     }
@@ -79,6 +92,18 @@
     span {
         font-size: 14px;
         font-weight: 300;
+
+        @include media-mobile2 {
+            font-size: 10px;
+        }
+    }
+
+    @include media-mobile {
+        font-size: 14px;
+    }
+
+    @include media-mobile2 {
+        font-size: 10px;
     }
 }
 
@@ -113,6 +138,7 @@
 .proposal__name {
     position: relative;
     font-size: 16px;
+    font-weight: 300;
 
     &::before {
         content: "";
@@ -125,20 +151,58 @@
         height: 20px;
         border-radius: 50%;
         background-color: $color-green-dark;
+        transition: 0.3s;
+
+        @include media-mobile {
+            display: none;
+        }
     }
 
-    &--mode {
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 33px;
+        height: 33px;
+        border-radius: 50%;
+        background-color: #fff;
+        z-index: -1;
+        transition: 0.3s;
+
+        @include media-mobile {
+            display: none;
+        }
+    }
+
+    &.active {
+        color: $color-blue-dark;
+
         &::before {
             width: 36px;
             height: 36px;
             left: -5px;
+            transition: 0.3s;
+        }
+
+        &::after {
+            width: 58px;
+            height: 58px;
+            left: 13px;
+            transition: 0.3s;
         }
     }
-}
 
-// .proposal__pagination {
-//     left: 50px;
-// }
+    @include media-mobile {
+        font-size: 14px;
+    }
+
+    @include media-mobile2 {
+        font-size: 10px;
+    }
+}
 
 .proposal__slick {
     margin-bottom: 20px;
@@ -183,6 +247,14 @@
             display: none !important;
         }
     }
+
+    p {
+        padding-left: 0 !important;
+    }
+
+    @include media-mobile {
+        display: none;
+    }
 }
 
 .proposal__list {
@@ -190,48 +262,121 @@
     li {
         position: absolute;
 
+        a {
+            display: block;
+
+            &:hover {
+                .proposal__name {
+                    color: $color-blue-dark;
+
+                    &::before {
+                        width: 36px;
+                        height: 36px;
+                        left: -5px;
+                        transition: 0.3s;
+
+
+                    }
+
+                    &::after {
+                        width: 58px;
+                        height: 58px;
+                        left: 13px;
+                        transition: 0.3s;
+
+
+                    }
+
+                }
+            }
+        }
+
         p {
-            padding-left: 49px;
+            padding-left: 143px;
+
+            @include media-laptop {
+                padding-left: 50px;
+            }
         }
 
         &:nth-child(2) {
             top: 238px;
-            left: 1129px;
+            left: 1011px;
 
             @include media-laptop {
                 left: 0;
                 top: 0;
                 margin-top: 38px;
             }
+
+            @include media-mobile {
+                left: 50px;
+                top: -33px;
+            }
+
+            @include media-mobile2 {
+                left: 20px;
+                top: -33px;
+            }
         }
 
         &:nth-child(3) {
-            top: 339px;
-            left: 1229px;
+            top: 329px;
+            left: 1101px;
 
             @include media-laptop {
                 left: 0;
                 top: 0;
+            }
+
+            @include media-mobile {
+                left: 88px;
+                top: -54px;
+            }
+
+            @include media-mobile2 {
+                left: 58px;
+                top: -54px;
             }
         }
 
         &:nth-child(4) {
-            top: 462px;
-            left: 1231px;
+            top: 461px;
+            left: 1097px;
 
             @include media-laptop {
                 left: 0;
                 top: 0;
             }
+
+            @include media-mobile {
+                left: 90px;
+                top: -44px;
+            }
+
+            @include media-mobile2 {
+                left: 58px;
+                top: -44px;
+            }
         }
 
         &:last-child {
-            top: 550px;
-            left: 1132px;
+            top: 548px;
+            left: 1010px;
 
             @include media-laptop {
                 left: 0;
                 top: 0;
+            }
+
+            @include media-mobile {
+                left: 50px;
+                top: -61px;
+            }
+
+            @include media-mobile2 {
+                left: 17px;
+                top: -61px;
             }
         }
 
@@ -249,8 +394,25 @@
         }
     }
 
+    // @media (max-width: 1440px) {
+    //     left: -332px;
+    //     top: -137px;
+    //     position: absolute; 
+    // }
+
+    // @include media-laptop {
+    //     position: static;
+    // }
+
     @include media-mobile {
-        display: none;
+        // display: none;
+        background-image: url("../img/svg/romb-1.svg");
+        background-repeat: no-repeat;
+        background-size: 140px auto;
+    }
+
+    @include media-mobile2 {
+        background-size: 118px auto;
     }
 }
 

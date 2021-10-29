@@ -1,48 +1,60 @@
 $(document).ready(function () {
-    $(function () {
-        let $slider = $('.proposal__slick');
+    // $(function () {
+    //     let $slider = $('.proposal__slick');
 
-        if ($slider.length) {
-            let currentSlide;
-            let slidesCount;
-            let sliderCounter = document.createElement('div');
-            sliderCounter.classList.add('slider__counter');
+    //     if ($slider.length) {
+    //         let currentSlide;
+    //         let slidesCount;
+    //         let sliderCounter = document.createElement('div');
+    //         sliderCounter.classList.add('slider__counter');
 
-            let updateSliderCounter = function (slick, currentIndex) {
-                currentSlide = slick.slickCurrentSlide() + 1;
-                currentSlide = currentSlide < 10 ? "0" + currentSlide : currentSlide;
-                slidesCount = slick.slideCount;
-                slidesCount = slidesCount < 10 ? "0" + slidesCount : slidesCount;
-                $(sliderCounter).html(currentSlide + '<span class="line">/</span>' + slidesCount)
-            };
+    //         let updateSliderCounter = function (slick, currentIndex) {
+    //             currentSlide = slick.slickCurrentSlide() + 1;
+    //             currentSlide = currentSlide < 10 ? "0" + currentSlide : currentSlide;
+    //             slidesCount = slick.slideCount;
+    //             slidesCount = slidesCount < 10 ? "0" + slidesCount : slidesCount;
+    //             $(sliderCounter).html(currentSlide + '<span class="line">/</span>' + slidesCount)
+    //         };
 
-            $slider.on('init', function (event, slick) {
-                $slider.prepend(sliderCounter);
-                // $('.slider-main__title').prepend(sliderCounter);
-                updateSliderCounter(slick);
-            });
+    //         $slider.on('init', function (event, slick) {
+    //             $slider.prepend(sliderCounter);
+    //             // $('.slider-main__title').prepend(sliderCounter);
+    //             updateSliderCounter(slick);
+    //         });
 
-            $slider.on('afterChange', function (event, slick, currentSlide) {
-                updateSliderCounter(slick, currentSlide);
-            });
+    //         $slider.on('afterChange', function (event, slick, currentSlide) {
+    //             updateSliderCounter(slick, currentSlide);
+    //         });
 
-            $slider.slick({
-                dots: false,
-                arrows: false,
-                speed: 500,
-                fade: true,
-                cssEase: 'linear',
-                prevArrow: $('.slick-proposal__prev'),
-                nextArrow: $('.slick-proposal__next'),
-                responsive: [{
-                    breakpoint: 767,
-                    settings: {
-                        arrows: true,
-                    }
-                }]
-            });
-        }
-    });
+    //         $slider.slick({
+    //             dots: false,
+    //             arrows: false,
+    //             speed: 500,
+    //             fade: true,
+    //             cssEase: 'linear',
+    //             prevArrow: $('.slick-proposal__prev'),
+    //             nextArrow: $('.slick-proposal__next'),
+    //             responsive: [{
+    //                 breakpoint: 767,
+    //                 settings: 'unslick'
+    //             }]
+    //         });
+    //     }
+    // });
+
+    // $('.proposal__slick').slick({
+    //     dots: false,
+    //     arrows: false,
+    //     speed: 500,
+    //     fade: true,
+    //     cssEase: 'linear',
+    //     prevArrow: $('.slick-proposal__prev'),
+    //     nextArrow: $('.slick-proposal__next'),
+    //     responsive: [{
+    //         breakpoint: 767,
+    //         settings: 'unslick'
+    //     }]
+    // })
 
     $('.partners__slick').slick({
         slidesToShow: 6,
@@ -71,7 +83,7 @@ $(document).ready(function () {
             return '<a>' + currentSlide + '</a>';
         },
         responsive: [{
-            breakpoint: 1920,
+            breakpoint: 1440,
             settings: {
                 dots: false
             }

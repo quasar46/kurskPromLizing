@@ -109,12 +109,12 @@ html(lang="ru")
                 h2.title.proposal__title Предмет лизинга
             .proposal__slick
                 .proposal__item
-                    .proposal__arrows 
-                        .slick-proposal__prev
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
-                        p.proposal__item-name Новые автомобили
-                        .slick-proposal__next
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                    //- .proposal__arrows
+                    //-     .slick-proposal__prev
+                    //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                    //-     p.proposal__item-name Новые автомобили
+                    //-     .slick-proposal__next
+                    //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
 
                     picture 
                         source(media="(max-width: 320px)" srcset="img/proposal/item1-mobile2.png")
@@ -130,7 +130,7 @@ html(lang="ru")
                             a(href="") 
                                 p.proposal__count 01 /
                                     span 04 
-                                p.proposal__name.proposal__name--mode Новые автомобили
+                                p.proposal__name.active.proposal__name--mode Новые автомобили
                         li
                             a(href="") 
                                 p.proposal__count 02 /
@@ -146,117 +146,117 @@ html(lang="ru")
                                 p.proposal__count 04 /
                                     span 04
                                 p.proposal__name Автомобили повышенной вместимости
-                .proposal__item
-                    .proposal__arrows 
-                        .slick-proposal__prev
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
-                        p.proposal__item-name Новые автомобили2
-                        .slick-proposal__next
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
-                    picture 
-                        source(media="(max-width: 320px)" srcset="img/proposal/item2-mobile2.png")
-                        source(media="(max-width: 414px)" srcset="img/proposal/item2-mobile1.png")
-                        source(media="(max-width: 768px)" srcset="img/proposal/item2-tablet.png")
-                        source(media="(max-width: 1024px)" srcset="img/proposal/item2-laptop.png")
-                        source(media="(min-width: 1025px)" srcset="img/proposal/item2-desktop.png")
-                        img(src="img/proposal/item2-desktop.png" alt="")
-                    ul.proposal__list
-                        li.proposal__item-title
-                            p Легковые автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 01 /
-                                    span 04 
-                                p.proposal__name.proposal__name--mode Новые автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 02 /
-                                    span 04
-                                p.proposal__name Поддержанные автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 03 /
-                                    span 04
-                                p.proposal__name Коммерческий транспорт
-                        li
-                            a(href="") 
-                                p.proposal__count 04 /
-                                    span 04
-                                p.proposal__name Автомобили повышенной вместимости
-                .proposal__item
-                    .proposal__arrows 
-                        .slick-proposal__prev
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
-                        p.proposal__item-name Новые автомобили3
-                        .slick-proposal__next
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
-                    picture 
-                        source(media="(max-width: 320px)" srcset="img/proposal/item3-mobile2.png")
-                        source(media="(max-width: 414px)" srcset="img/proposal/item3-mobile1.png")
-                        source(media="(max-width: 768px)" srcset="img/proposal/item3-tablet.png")
-                        source(media="(max-width: 1024px)" srcset="img/proposal/item3-laptop.png")
-                        source(media="(min-width: 1025px)" srcset="img/proposal/item3-desktop.png")
-                        img(src="img/proposal/item3-desktop.png" alt="")
-                    ul.proposal__list
-                        li.proposal__item-title
-                            p Легковые автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 01 /
-                                    span 04 
-                                p.proposal__name.proposal__name--mode Новые автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 02 /
-                                    span 04
-                                p.proposal__name Поддержанные автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 03 /
-                                    span 04
-                                p.proposal__name Коммерческий транспорт
-                        li
-                            a(href="") 
-                                p.proposal__count 04 /
-                                    span 04
-                                p.proposal__name Автомобили повышенной вместимости
-                .proposal__item
-                    .proposal__arrows 
-                        .slick-proposal__prev
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
-                        p.proposal__item-name Новые автомобили4
-                        .slick-proposal__next
-                            <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
-                    picture 
-                        source(media="(max-width: 320px)" srcset="img/proposal/item4-mobile2.png")
-                        source(media="(max-width: 414px)" srcset="img/proposal/item4-mobile1.png")
-                        source(media="(max-width: 768px)" srcset="img/proposal/item4-tablet.png")
-                        source(media="(max-width: 1024px)" srcset="img/proposal/item4-laptop.png")
-                        source(media="(min-width: 1025px)" srcset="img/proposal/item4-desktop.png")
-                        img(src="img/proposal/item4-desktop.png" alt="")
-                    ul.proposal__list
-                        li.proposal__item-title
-                            p Легковые автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 01 /
-                                    span 04 
-                                p.proposal__name.proposal__name--mode Новые автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 02 /
-                                    span 04
-                                p.proposal__name Поддержанные автомобили
-                        li
-                            a(href="") 
-                                p.proposal__count 03 /
-                                    span 04
-                                p.proposal__name Коммерческий транспорт
-                        li
-                            a(href="") 
-                                p.proposal__count 04 /
-                                    span 04
-                                p.proposal__name Автомобили повышенной вместимости
+                //- .proposal__item
+                //-     //- .proposal__arrows 
+                //-     //-     .slick-proposal__prev
+                //-     //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                //-     //-     p.proposal__item-name Новые автомобили2
+                //-     //-     .slick-proposal__next
+                //-     //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                //-     picture 
+                //-         source(media="(max-width: 320px)" srcset="img/proposal/item2-mobile2.png")
+                //-         source(media="(max-width: 414px)" srcset="img/proposal/item2-mobile1.png")
+                //-         source(media="(max-width: 768px)" srcset="img/proposal/item2-tablet.png")
+                //-         source(media="(max-width: 1024px)" srcset="img/proposal/item2-laptop.png")
+                //-         source(media="(min-width: 1025px)" srcset="img/proposal/item2-desktop.png")
+                //-         img(src="img/proposal/item2-desktop.png" alt="")
+                //-     ul.proposal__list
+                //-         li.proposal__item-title
+                //-             p Легковые автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 01 /
+                //-                     span 04 
+                //-                 p.proposal__name.proposal__name--mode Новые автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 02 /
+                //-                     span 04
+                //-                 p.proposal__name Поддержанные автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 03 /
+                //-                     span 04
+                //-                 p.proposal__name Коммерческий транспорт
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 04 /
+                //-                     span 04
+                //-                 p.proposal__name Автомобили повышенной вместимости
+                //- .proposal__item
+                //-     //- .proposal__arrows 
+                //-     //-     .slick-proposal__prev
+                //-     //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                //-     //-     p.proposal__item-name Новые автомобили3
+                //-     //-     .slick-proposal__next
+                //-     //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                //-     picture 
+                //-         source(media="(max-width: 320px)" srcset="img/proposal/item3-mobile2.png")
+                //-         source(media="(max-width: 414px)" srcset="img/proposal/item3-mobile1.png")
+                //-         source(media="(max-width: 768px)" srcset="img/proposal/item3-tablet.png")
+                //-         source(media="(max-width: 1024px)" srcset="img/proposal/item3-laptop.png")
+                //-         source(media="(min-width: 1025px)" srcset="img/proposal/item3-desktop.png")
+                //-         img(src="img/proposal/item3-desktop.png" alt="")
+                //-     ul.proposal__list
+                //-         li.proposal__item-title
+                //-             p Легковые автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 01 /
+                //-                     span 04 
+                //-                 p.proposal__name.proposal__name--mode Новые автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 02 /
+                //-                     span 04
+                //-                 p.proposal__name Поддержанные автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 03 /
+                //-                     span 04
+                //-                 p.proposal__name Коммерческий транспорт
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 04 /
+                //-                     span 04
+                //-                 p.proposal__name Автомобили повышенной вместимости
+                //- .proposal__item
+                //-     //- .proposal__arrows 
+                //-     //-     .slick-proposal__prev
+                //-     //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 1L1.21251 7.53333C1.14634 7.5886 1.0928 7.65937 1.05597 7.74025C1.01914 7.82113 1 7.90997 1 8C1 8.09003 1.01914 8.17887 1.05597 8.25975C1.0928 8.34063 1.14634 8.4114 1.21251 8.46667L9 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                //-     //-     p.proposal__item-name Новые автомобили4
+                //-     //-     .slick-proposal__next
+                //-     //-         <svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L8.78749 7.53333C8.85366 7.5886 8.9072 7.65937 8.94403 7.74025C8.98086 7.82113 9 7.90997 9 8C9 8.09003 8.98086 8.17887 8.94403 8.25975C8.9072 8.34063 8.85366 8.4114 8.78749 8.46667L1 15" stroke="#22304B" stroke-width="0.75"/></svg>
+                //-     picture 
+                //-         source(media="(max-width: 320px)" srcset="img/proposal/item4-mobile2.png")
+                //-         source(media="(max-width: 414px)" srcset="img/proposal/item4-mobile1.png")
+                //-         source(media="(max-width: 768px)" srcset="img/proposal/item4-tablet.png")
+                //-         source(media="(max-width: 1024px)" srcset="img/proposal/item4-laptop.png")
+                //-         source(media="(min-width: 1025px)" srcset="img/proposal/item4-desktop.png")
+                //-         img(src="img/proposal/item4-desktop.png" alt="")
+                //-     ul.proposal__list
+                //-         li.proposal__item-title
+                //-             p Легковые автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 01 /
+                //-                     span 04 
+                //-                 p.proposal__name.proposal__name--mode Новые автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 02 /
+                //-                     span 04
+                //-                 p.proposal__name Поддержанные автомобили
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 03 /
+                //-                     span 04
+                //-                 p.proposal__name Коммерческий транспорт
+                //-         li
+                //-             a(href="") 
+                //-                 p.proposal__count 04 /
+                //-                     span 04
+                //-                 p.proposal__name Автомобили повышенной вместимости
 
             .container.proposal__container
                 button.button.button--green.proposal__button Смотреть больше
@@ -387,7 +387,7 @@ html(lang="ru")
                             img(src="img/partners/item1.svg" alt="")
                             p Doyle Group
 
-                button.partners__button.button.button--green Все партнеры
+                a(href="partners.html").partners__button.button.button--green Все партнеры
 
         include modules/order.pug
 
